@@ -200,15 +200,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-\[1vh\] {
-    top: 1vh;
-  }
-  .top-\[52\.5vh\] {
-    top: 52.5vh;
-  }
-  .top-\[93\.3vh\] {
-    top: 93.3vh;
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -263,8 +254,17 @@
   .my-7 {
     margin-block: calc(var(--spacing) * 7);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -308,23 +308,11 @@
   .h-\[1px\] {
     height: 1px;
   }
-  .h-\[40\%\] {
-    height: 40%;
-  }
-  .h-\[45vh\] {
-    height: 45vh;
-  }
-  .h-\[47vh\] {
-    height: 47vh;
-  }
   .h-\[48vh\] {
     height: 48vh;
   }
-  .h-\[50vh\] {
-    height: 50vh;
-  }
-  .h-\[60vh\] {
-    height: 60vh;
+  .max-h-\[calc\(100vh-1rem\)\] {
+    max-height: calc(100vh - 1rem);
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -419,6 +407,9 @@
   }
   .self-start {
     align-self: flex-start;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -758,6 +749,15 @@
       width: 96%;
     }
   }
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 @property --tw-rotate-x {
   syntax: "*";

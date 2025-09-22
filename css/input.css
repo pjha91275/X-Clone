@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/* hide scrollbars (Chrome/Safari/Edge/Firefox/IE) */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+  width: 0;
+  height: 0;
+}
+
+/* replace hidden scrollbar with a thin visible one while hovering
+.no-scrollbar:hover {
+  scrollbar-width: thin;
+}
+.no-scrollbar:hover::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+.no-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 8px;
+} */
