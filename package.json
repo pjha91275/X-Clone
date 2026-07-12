@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "ISC",            
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
